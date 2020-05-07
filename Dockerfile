@@ -21,7 +21,7 @@ RUN apk add --no-cache --update \
 COPY . /tmp/userbot_local
 WORKDIR /usr/src/app/TG-UserBot/
 
-RUN git clone https://github.com/kandnub/TG-UserBot.git /usr/src/app/TG-UserBot/
+RUN git clone https://github.com/a7md-j3fr/TG-UserBot.git /usr/src/app/TG-UserBot/
 RUN rsync --ignore-existing --recursive /tmp/userbot_local/ /usr/src/app/TG-UserBot/
 
 RUN python3 -m pip install --upgrade pip
